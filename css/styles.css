@@ -1,0 +1,49 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* It will make padding and border size part of element height & widht */
+}
+
+html {
+  font-size: 62.5%; /*Equivalent to 10 pixels, settting root size for rem units*/
+}
+
+a,
+p1 {
+  font-size: 2.4rem;
+  color: white;
+}
+
+a {
+  text-decoration: none;
+}
+
+nav {
+  background-color: rgb(7, 7, 35);
+  min-height: 10vh;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  padding: 1rem 4rem;
+  position: fixed;
+}
+
+nav ul {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 content; /* flex-grow | flex-shring | flex-basis */
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+}
+
+li {
+  flex: 1 1 content; /* flex-grow | flex-shring | flex-basis */
+  /*setting 'flex-grow:content' will serve as initial size before distributing extra space, and it will serve as width break-point for when to wrap items on next line*/
+}
+
+p1#logo {
+  flex-grow: 2;
+}
