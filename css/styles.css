@@ -9,6 +9,10 @@ html {
   font-size: 62.5%; /*Equivalent to 10 pixels, settting root size for rem units*/
 }
 
+body {
+  font-family: "Poppins", sans-serif;
+}
+
 a,
 h1 {
   font-size: 2.4rem;
@@ -41,10 +45,11 @@ nav {
 
 #logo {
   flex: 2 1 30rem;
+  font-family: "caveat", "cursive";
 }
 
 nav ul {
-  flex: 1 1 30rem; /*flex-grow | flex-shring | flex-basis*/
+  flex: 1 1 40rem; /*flex-grow | flex-shring | flex-basis*/
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -59,13 +64,13 @@ li {
 
 .hero {
   min-height: 90vh;
+  margin-top: 10vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
     url("../img/landing-page.jpg");
   background-size: cover;
-  margin-top: 10vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -83,8 +88,12 @@ li {
   cursor: pointer;
 }
 
-@media screen and (max-width: 679px) {
+@media screen and (max-width: 779px) {
   nav {
     text-align: center;
+  }
+
+  html {
+    font-size: 45%;
   }
 }
