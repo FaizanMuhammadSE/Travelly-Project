@@ -79,9 +79,9 @@ li {
 }
 
 .hero button {
-  background-color: rgb(11, 83, 183);
+  background-color: #4c6e97;
   color: rgb(241, 241, 245);
-  border: 1px solid rgb(7, 7, 35);
+  border: none;
   border-radius: 5px;
   padding: 1rem 4rem;
   margin: 1rem 0;
