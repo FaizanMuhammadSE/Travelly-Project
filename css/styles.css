@@ -98,6 +98,8 @@ li {
     url("../img/new-york-page.png");
   background-size: cover;
   background-position: center;
+  position: relative;
+  overflow: hidden;
 }
 #locations-header {
   width: 90%;
@@ -116,6 +118,30 @@ li {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.cloud {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.cloud-animation-1 {
+  animation: cloudAnimation 5s infinite alternate ease-in-out; /*keyFrame animation-duration repetation alternate easing*/
+}
+.cloud-animation-2 {
+  top: 15%;
+  animation: cloudAnimation 4s infinite alternate ease-in-out; /*keyFrame animation-duration repetation alternate easing*/
+  opacity: 0.5;
+  z-index: -1;
+}
+
+/* KeyFrames */
+@keyframes cloudAnimation {
+  from {
+    transform: translate(0%, 0%); /* x-axis y-axis */
+  }
+  to {
+    transform: translate(10%, -10%);
+  }
+}
 @media screen and (max-width: 779px) {
   nav {
     text-align: center;
@@ -123,5 +149,11 @@ li {
 
   html {
     font-size: 45%;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  #locations-header {
+    z-index: 2;
   }
 }
