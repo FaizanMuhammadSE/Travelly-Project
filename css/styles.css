@@ -62,6 +62,7 @@ li {
   /*setting 'flex-grow:content' will serve as initial size before distributing extra space, and it will serve as width break-point for when to wrap items on next line*/
 }
 
+/* Hero Section */
 .hero {
   min-height: 90vh;
   margin-top: 10vh;
@@ -88,6 +89,33 @@ li {
   cursor: pointer;
 }
 
+/* Location Section */
+#locations {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/new-york-page.png");
+  background-size: cover;
+  background-position: center;
+}
+#locations-header {
+  width: 90%;
+  margin: auto;
+}
+#locations-header h2 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+  text-decoration: underline;
+  text-decoration-thickness: 0.3rem;
+}
+#locations-header h3 {
+  font-size: 2rem;
+  /* applying gradient on text */
+  background: linear-gradient(to right, #020a27, #103666, #0d4e9d);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 @media screen and (max-width: 779px) {
   nav {
     text-align: center;
