@@ -69,7 +69,7 @@ nav ul {
   list-style-type: none;
 }
 
-li {
+nav ul li {
   flex: 1 1 content; /*flex-grow | flex-shring | flex-basis*/
   /*setting 'flex-grow:content' will serve as initial size before distributing extra space, and it will serve as width break-point for when to wrap items on next line*/
 }
@@ -237,6 +237,36 @@ li {
   cursor: pointer;
 }
 
+/* Footer Section */
+footer {
+  background-color: rgb(19, 28, 39, 1);
+  color: white;
+}
+#footer-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  min-height: 10vh;
+  width: 90%;
+  margin: auto;
+  padding: 2rem;
+}
+#footer-wrapper h2 {
+  flex: 2 1 20rem;
+}
+#footer-wrapper ul {
+  flex: 1 1 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#footer-wrapper a {
+  text-decoration: none;
+}
+#footer-wrapper li {
+  list-style-type: none;
+}
+
 /* Animatio KeyFrames */
 @keyframes cloudAnimation {
   from {
@@ -267,5 +297,12 @@ li {
 @media screen and (max-width: 570px) {
   #form-wrapper {
     width: 80%;
+  }
+}
+
+@media screen and (max-width: 351px) {
+  #footer-wrapper h2 {
+    text-align: center;
+    padding-bottom: 1rem;
   }
 }
