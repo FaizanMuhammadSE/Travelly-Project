@@ -64,6 +64,7 @@ nav {
   padding: 1rem 4rem;
   position: fixed;
   top: 0;
+  z-index: 3;
 }
 
 #logo {
