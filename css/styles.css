@@ -191,8 +191,53 @@ li {
   color: black;
   padding: 2rem;
 }
+/*Contact section*/
+#contact {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), transparent),
+    url("../img/contact-mountain.png");
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#form-wrapper {
+  background-color: rgba(19, 28, 39, 0.8);
+  padding-top: 2rem;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 40%;
+  color: white;
+}
+.field {
+  margin: 2rem;
+}
+.field label {
+  font-size: 1.6rem;
+  color: white;
+}
+.field input {
+  height: 3rem;
+  width: 40%;
+  border: none;
+  background-color: aliceblue;
+}
+#name,
+#email {
+  margin: 2rem;
+}
+#form-wrapper button {
+  width: 100%;
+  height: 5rem;
+  background-color: rgb(7, 7, 35);
+  color: white;
+  border: 0;
+  cursor: pointer;
+}
 
-/* KeyFrames */
+/* Animatio KeyFrames */
 @keyframes cloudAnimation {
   from {
     transform: translate(0%, 0%); /* x-axis y-axis */
@@ -201,6 +246,8 @@ li {
     transform: translate(10%, -10%);
   }
 }
+
+/* Media Queries */
 @media screen and (max-width: 779px) {
   nav {
     text-align: center;
@@ -214,5 +261,11 @@ li {
 @media screen and (max-width: 980px) {
   #locations-header {
     z-index: 2;
+  }
+}
+
+@media screen and (max-width: 570px) {
+  #form-wrapper {
+    width: 80%;
   }
 }
