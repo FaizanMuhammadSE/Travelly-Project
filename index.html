@@ -23,9 +23,19 @@
       <nav>
         <h1 id="logo">Travelly</h1>
         <ul>
-          <li><a href="#locations">Locations</a></li>
-          <li><a href="#benefits">Benefits</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li>
+            <a href="#locations" label="navigate to locations section"
+              >Locations</a
+            >
+          </li>
+          <li>
+            <a href="#benefits" label="navigate to benefits section"
+              >Benefits</a
+            >
+          </li>
+          <li>
+            <a href="#contact" label="navigate to contacts section">Contact</a>
+          </li>
         </ul>
       </nav>
     </header>
@@ -48,8 +58,8 @@
             at reasonable price to accomodate your taste
           </h3>
         </header>
-        <img src="./img/cloud.png" class="cloud cloud-animation-1" />
-        <img src="./img/cloud.png" class="cloud cloud-animation-2" />
+        <img src="./img/cloud.png" class="cloud cloud-animation-1" alt="" />
+        <img src="./img/cloud.png" class="cloud cloud-animation-2" alt="" />
       </section>
       <section id="benefits">
         <header id="benefits-header">
@@ -62,7 +72,7 @@
         <div id="cards">
           <div class="card">
             <div class="card-header">
-              <img src="./icons/route-solid.svg" />
+              <img src="./icons/route-solid.svg" alt="route-icon" />
             </div>
             <div class="card-body">
               <h3>Travel</h3>
@@ -70,7 +80,9 @@
             </div>
           </div>
           <div class="card">
-            <div class="card-header"><img src="./icons/bed-solid.svg" /></div>
+            <div class="card-header">
+              <img src="./icons/bed-solid.svg" alt="bed-icon" />
+            </div>
             <div class="card-body">
               <h3>Sleep</h3>
               <p>Hotels located near<br />popular areas</p>
@@ -78,7 +90,10 @@
           </div>
           <div class="card">
             <div class="card-header">
-              <img src="./icons/plane-departure-solid.svg" />
+              <img
+                src="./icons/plane-departure-solid.svg"
+                alt="air-plane-icon"
+              />
             </div>
             <div class="card-body">
               <h3>Fly</h3>
@@ -93,11 +108,11 @@
           <form>
             <div class="field">
               <label for="name">Name</label>
-              <input type="text" id="name" required />
+              <input id="name" type="text" required />
             </div>
             <div class="field">
               <label for="email">Email</label>
-              <input type="email" id="email" required />
+              <input id="email" type="email" required />
             </div>
             <button>Submit</button>
           </form>
@@ -109,18 +124,18 @@
         <h2>Travelly &copy;</h2>
         <ul>
           <li>
-            <a href="#">
-              <img src="/icons/twitter.svg" />
+            <a href="#" label="twitter-icon-button">
+              <img src="/icons/twitter.svg" alt="twitter-icon-button" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./icons/instagram.svg" />
+            <a href="#" label="instagram-icon-button">
+              <img src="./icons/instagram.svg" alt="instagram-icon-button" />
             </a>
           </li>
           <li>
-            <a href="#">
-              <img src="./icons/youtube.svg" />
+            <a href="#" label="youtube-icon-button">
+              <img src="./icons/youtube.svg" alt="youtube-icon-button" />
             </a>
           </li>
         </ul>
